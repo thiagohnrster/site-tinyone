@@ -1,2 +1,2 @@
 # Tinyone
-[https://thiagohnrster.github.io/tinyone/]
+(https://thiagohnrster.github.io/tinyone/)
