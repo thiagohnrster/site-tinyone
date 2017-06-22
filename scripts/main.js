@@ -12,7 +12,7 @@ $(function () {
 		var winSize = $(window).width(),
 			/* Variável que armazena a classe do menu */
 			nav = $('.navbar');
-		/*Se o tamanho da janela do browser for menor ou igual a 1024px */
+		/* Se o tamanho da janela do browser for menor ou igual a 1024px */
 		if(winSize <= 1024) {
 			/* Mostra o tamanho da janela do browser no console */
 			console.log(winSize);

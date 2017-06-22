@@ -79,6 +79,7 @@ h4 {
   width: 100%;
 }
 .featured-headr {
+  position: relative;
   height: 711px;
   padding-top: 30px;
   overflow: hidden;
@@ -189,109 +190,129 @@ h4 {
   background: #ffffff;
 }
 .showcase {
-  width: 100%;
-  position: relative;
-}
-.showcase .showcase-viewport {
-  height: 469px;
-  padding: 52px 0px;
+  text-align: left;
+  max-width: 1170px;
+  height: 570px;
+  margin: 0px auto;
   overflow: hidden;
 }
-.showcase .showcase-img-outer {
+.showcase .showcase-wrap {
+  height: inherit;
+  overflow: hidden;
+}
+.showcase .showcase-content {
+  width: 100%;
+  height: auto;
+  padding: 52px 0px;
+}
+.showcase .showcase-content .showcase-figure {
   float: right;
   display: inline-block;
   width: 27%;
-  overflow: hidden;
-}
-.showcase .showcase-img-outer img {
-  width: 100%;
 }
 .showcase .showcase-caption {
-  float: left;
-  width: 400px;
-  padding: 60px 0px;
-}
-.showcase .showcase-caption h2,
-.showcase .showcase-caption h3 {
-  margin: 0px 0px 15px 0px;
+  margin: 6% 64% 6% 0;
 }
 .showcase .showcase-caption h2 {
   font-family: 'pt_sansbold';
+  font-weight: 100;
 }
 .showcase .showcase-caption h3 {
   font-family: 'pt_sansregular';
   font-weight: 100;
 }
+.showcase .showcase-caption h2,
+.showcase .showcase-caption h3 {
+  margin: 0px 0px 15px 0px;
+}
 .showcase .showcase-caption p {
   font-family: 'pt_sansregular';
   font-size: 16px;
+  margin: 0px 0px 10px 0px;
 }
-.showcase .showcase-btn-download,
-.showcase .showcase-btn-download a {
+.showcase .showcase-caption p:last-child {
+  margin: 0px;
+}
+.showcase .showcase-caption .showcase-btn-download {
+  float: left;
   display: inline-block;
+  margin: 48px 42px 48px 0px;
+}
+.showcase .showcase-caption .showcase-btn-download:last-child {
+  margin: 48px 0px 48px 0px;
+}
+.showcase .showcase-caption .showcase-btn-download a {
+  font-family: inherit;
+  display: block;
   font-size: 100%;
   color: #010101;
 }
-.showcase .showcase-btn-download {
-  float: left;
-  margin: 48px 42px 48px 0px;
-}
-.showcase .showcase-btn-download:last-child {
-  margin: 48px 0px 48px 0px;
-}
-.showcase .showcase-btn-apple a {
+.showcase .showcase-caption .showcase-btn-apple a {
   width: 33px;
   height: 39px;
   background: url('../../images/icon-fa-apple.png') center center no-repeat;
 }
-.showcase .showcase-btn-android a {
+.showcase .showcase-caption .showcase-btn-android a {
   width: 33px;
   height: 39px;
   background: url('../../images/icon-fa-android.png') center center no-repeat;
 }
-.showcase .showcase-btn-windows a {
+.showcase .showcase-caption .showcase-btn-windows a {
   width: 39px;
   height: 40px;
   background: url('../../images/icon-fa-windows.png') center center no-repeat;
 }
-.showcase .showcase-btn-apple a:after,
-.showcase .showcase-btn-android a:after,
-.showcase .showcase-btn-windows a:after {
+.showcase .showcase-caption .showcase-btn-apple a:after,
+.showcase .showcase-caption .showcase-btn-android a:after,
+.showcase .showcase-caption .showcase-btn-windows a:after {
   content: '';
 }
-.showcase .showcase-paging {
+.showcase .showcase-dots {
   position: absolute;
-  text-align: center;
   left: 0px;
-  bottom: -30px;
+  bottom: 0px;
   width: 100%;
-  padding: 0px;
+  padding: 52px 0px;
 }
-.showcase .showcase-paging span {
+.showcase .showcase-dots ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.showcase .showcase-dots ul li {
   display: inline-block;
-  line-height: 0px;
-  margin: 0 2px;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin: 0px 4px;
   border-radius: 60px;
-  overflow: hidden;
   opacity: 0.6;
-  -moz-opacity: 0.6;
-  filter: alpha(opacity=60);
   background: #ffffff;
 }
-.showcase .showcase-paging span:last-child {
-  margin: 0px 0px 0px 2px;
-}
-.showcase .showcase-paging span:first-child {
-  margin: 0px 2px 0px 0px;
-}
-.showcase .showcase-paging span a {
-  display: block;
-  padding: 8px;
-}
-.showcase .showcase-paging .current-page {
+.showcase .showcase-dots .on {
   opacity: 1;
-  -moz-opacity: 1;
-  filter: alpha(opacity=100);
+}
+.showcase .showcase-arrows {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding: 52px 0px;
+}
+.showcase .showcase-arrows ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.showcase .showcase-arrows ul li {
+  display: inline-block;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0px 10px;
+  padding: 10px;
+  background: #010101;
 }
 .container {
   width: 1170px;
@@ -305,6 +326,7 @@ h4 {
 }
 .featured-block h2 {
   font-family: 'pt_sansbold';
+  font-weight: 100;
   margin: 0px 0px 15px 0px;
 }
 .featured-block h4 {
@@ -400,6 +422,7 @@ h4 {
 }
 .footer .subscribe h2 {
   font-family: 'pt_sansbold';
+  font-weight: 100;
   color: #fcdb00;
 }
 .footer .subscribe h4 {
@@ -617,50 +640,45 @@ h4 {
     color: #fcdb00;
   }
   .showcase {
+    width: auto;
     height: auto;
-  }
-  .showcase .showcase-viewport {
-    height: auto;
-    padding: 52px 0px;
-  }
-  .showcase .showcase-img-outer {
-    width: 27%;
+    margin: 0px 44px;
   }
   .showcase .showcase-caption {
-    float: none;
-    width: auto;
-    margin-right: 32%;
-    padding: 0px;
+    margin: 0 40% 0 0;
   }
-  .showcase .showcase-btn-download {
+  .showcase .showcase-caption p {
+    font-size: 16px;
+  }
+  .showcase .showcase-caption .showcase-btn-download {
     font-size: 38px;
     margin: 25px 42px 25px 0px;
   }
-  .showcase .showcase-btn-download:last-child {
+  .showcase .showcase-caption .showcase-btn-download:last-child {
     margin: 25px 0px 25px 0px;
   }
-  .showcase .showcase-btn-apple a,
-  .showcase .showcase-btn-android a,
-  .showcase .showcase-btn-windows a {
+  .showcase .showcase-caption .showcase-btn-apple a,
+  .showcase .showcase-caption .showcase-btn-android a,
+  .showcase .showcase-caption .showcase-btn-windows a {
     width: auto;
     height: auto;
     background: none;
   }
-  .showcase .showcase-btn-apple a:after {
+  .showcase .showcase-caption .showcase-btn-apple a:after {
     content: '\f179';
   }
-  .showcase .showcase-btn-android a:after {
+  .showcase .showcase-caption .showcase-btn-android a:after {
     content: '\f17b';
   }
-  .showcase .showcase-btn-windows a:after {
+  .showcase .showcase-caption .showcase-btn-windows a:after {
     content: '\f17a';
   }
-  .showcase .showcase-paging {
-    bottom: 30px;
+  .showcase .showcase-dots {
+    padding: 0px 0px 30px 0px;
   }
-  .showcase .showcase-paging span a {
-    display: block;
-    padding: 8px;
+  .showcase .showcase-dots ul li {
+    width: 10px;
+    height: 10px;
   }
   .container {
     width: auto;
@@ -797,59 +815,54 @@ h4 {
     color: #fcdb00;
   }
   .showcase {
-    height: auto;
-  }
-  .showcase .showcase-viewport {
     text-align: center;
+    width: auto;
     height: auto;
+    margin: 0px 15px;
+  }
+  .showcase .showcase-content {
     padding: 10px 0px 52px 0px;
   }
-  .showcase .showcase-img-outer {
+  .showcase .showcase-content .showcase-figure {
     float: none;
-    width: 15%;
-    margin: 0px 0px 15px 0px;
+    width: 27%;
   }
   .showcase .showcase-caption {
-    float: none;
-    width: auto;
-    margin: 0px;
-    padding: 0px;
+    margin: 5% 0 0 0;
   }
   .showcase .showcase-caption p {
-    font-family: 'pt_sansregular';
     font-size: 14px;
   }
-  .showcase .showcase-btn-download {
+  .showcase .showcase-caption .showcase-btn-download {
     float: none;
     font-size: 26px;
-    margin: 15px 42px 15px 0px;
+    margin: 15px 25px 15px 0px;
   }
-  .showcase .showcase-btn-download:last-child {
+  .showcase .showcase-caption .showcase-btn-download:last-child {
     margin: 15px 0px 15px 0px;
   }
-  .showcase .showcase-btn-apple a,
-  .showcase .showcase-btn-android a,
-  .showcase .showcase-btn-windows a {
+  .showcase .showcase-caption .showcase-btn-apple a,
+  .showcase .showcase-caption .showcase-btn-android a,
+  .showcase .showcase-caption .showcase-btn-windows a {
     width: auto;
     height: auto;
     background: none;
   }
-  .showcase .showcase-btn-apple a:after {
+  .showcase .showcase-caption .showcase-btn-apple a:after {
     content: '\f179';
   }
-  .showcase .showcase-btn-android a:after {
+  .showcase .showcase-caption .showcase-btn-android a:after {
     content: '\f17b';
   }
-  .showcase .showcase-btn-windows a:after {
+  .showcase .showcase-caption .showcase-btn-windows a:after {
     content: '\f17a';
   }
-  .showcase .showcase-paging {
-    bottom: 0px;
+  .showcase .showcase-dots {
     padding: 30px 0px;
   }
-  .showcase .showcase-paging span a {
-    display: block;
-    padding: 4px;
+  .showcase .showcase-dots ul li {
+    width: 8px;
+    height: 8px;
   }
   .container {
     width: auto;
