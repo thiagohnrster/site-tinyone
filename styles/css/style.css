@@ -75,6 +75,9 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+body {
+  position: relative;
+}
 h2 {
   font-size: 32px;
 }
