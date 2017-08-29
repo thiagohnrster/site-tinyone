@@ -763,11 +763,14 @@ h4 {
     bottom: 0px;
     right: 0px;
     width: 84%;
-    height: 100%;
+    height: 100vh;
     z-index: 4;
-    padding: 56px 0px;
+    padding: 0px;
     background: #ffffff;
     box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.1);
+  }
+  .navbar .navbar-nav-right ul {
+    padding: 56px 0px;
   }
   .navbar-fixed {
     position: fixed;
