@@ -714,7 +714,7 @@ h4 {
   }
   .navbar ul {
     list-style: none;
-    padding: 52px 0px;
+    margin: 52px 0px;
   }
   .navbar li {
     float: none;
