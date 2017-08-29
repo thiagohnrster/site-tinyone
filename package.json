@@ -1,0 +1,11 @@
+{
+	"name": "tinyone",
+	"version": "1.0.0",
+	"description": "Site Tinyone",
+	"devDependencies": {
+		"gulp": "*",
+		"gulp-uglify": "*",
+		"gulp-concat": "*",
+		"gulp-less": "*"
+	}
+}
