@@ -758,7 +758,7 @@ h4 {
   }
   .navbar .navbar-nav-right {
     float: none;
-    position: fixed;
+    position: absolute;
     display: none;
     bottom: 0px;
     right: 0px;
