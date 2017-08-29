@@ -763,9 +763,9 @@ h4 {
     bottom: 0px;
     right: 0px;
     width: 84%;
-    height: 100vh;
+    height: 100%;
     z-index: 4;
-    padding: 56px;
+    padding: 56px 0px;
     background: #ffffff;
     box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.1);
   }
