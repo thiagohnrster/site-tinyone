@@ -15,7 +15,7 @@ $(function() {
             	$(this).toggleClass('navbar-btn-open');
 
                 $(this).parents('.navbar').find('.navbar-nav-right').animate({
-                    height: 'toggle'
+                    width: 'toggle'
                 }, 300);
 
                 if($(this).hasClass('navbar-btn-open')) {
