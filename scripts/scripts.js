@@ -19,9 +19,11 @@ $(function() {
                 }, 300);
 
                 if($(this).hasClass('navbar-btn-open')) {
-                	$('.navbar').append(overlay).hide().fadeIn(200);
+                    $('body').addClass('page-no-scroll');
+                    $('.navbar').append(overlay).hide().fadeIn(200);
                 } else {
-                	$(overlay).remove();
+                    $('body').removeClass('page-no-scroll');
+                    $(overlay).remove();
                 }
             });
 
