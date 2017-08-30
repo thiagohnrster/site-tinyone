@@ -19,10 +19,10 @@ $(function() {
                 }, 300);
 
                 if($(this).hasClass('navbar-btn-open')) {
-                    $('html, body').addClass('page-no-scroll');
+                    $('html').addClass('page-no-scroll');
                     $('.navbar').append(overlay).hide().fadeIn(200);
                 } else {
-                    $('html, body').removeClass('page-no-scroll');
+                    $('html').removeClass('page-no-scroll');
                     $(overlay).remove();
                 }
             });
